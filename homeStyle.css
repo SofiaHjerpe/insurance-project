@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* #F17949
+#FAB131
+#C7DDEA
+#A9A19E */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e4e4;
+}
+
+.card-one {
+  width: 400px;
+  height: 500px;
+  background-color: #c7ddea;
+  padding: 16px;
+  padding-bottom: 0;
+}
+.heading-header {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-inline: 50px;
+}
+.heading-header h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+.heading-header p {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+.heading-header p em {
+  color: #fff;
+  font-style: normal;
+}
+.heading-header button {
+  height: 50px;
+  width: 160px;
+  background-color: #fff;
+  text-transform: uppercase;
+  border-color: transparent;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  padding-inline: 40px;
+  white-space: nowrap;
+}
