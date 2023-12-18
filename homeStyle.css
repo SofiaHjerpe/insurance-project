@@ -13,19 +13,28 @@ body {
   align-items: center;
   background-color: #e4e4e4;
 }
+header {
+  display: flex;
+  flex-direction: column;
+}
+.header-wrapper {
+  display: flex;
+}
 
 .card-one {
-  width: 400px;
-  height: 500px;
+  width: 500px;
+  height: 545px;
   background-color: #c7ddea;
   padding: 16px;
   padding-bottom: 0;
+  overflow-y: hidden;
 }
 .heading-header {
   display: flex;
   flex-direction: column;
-  padding: 40px;
-  padding-inline: 50px;
+  width: 300px;
+  padding: 50px;
+  padding-bottom: 5px;
 }
 .heading-header h1 {
   font-family: "Frank Ruhl Libre", serif;
@@ -36,15 +45,14 @@ body {
   font-family: "Fira Sans", sans-serif;
   line-height: 1.7;
   font-size: 16px;
-  margin-bottom: 70px;
 }
 .heading-header p em {
   color: #fff;
   font-style: normal;
 }
-.heading-header button {
-  height: 50px;
-  width: 160px;
+.family-images button {
+  height: 48px;
+  width: 200px;
   background-color: #fff;
   text-transform: uppercase;
   border-color: transparent;
@@ -52,6 +60,86 @@ body {
   font-size: 14px;
   font-family: "Fira Sans", sans-serif;
   font-weight: bold;
-  padding-inline: 40px;
   white-space: nowrap;
+  margin-bottom: 100px;
+  margin-inline: 40px 0;
+}
+.family-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.family-images img {
+  width: 290px;
+}
+.card-two {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+  padding-bottom: 0;
+  justify-content: center;
+}
+.card-two-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f17949;
+  height: 280px;
+}
+.card-two-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fab131;
+  height: 280px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.content p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 10px;
+  margin-inline: 5px;
+}
+.content h2 {
+  font-size: 24px;
+  font-family: "Frank Ruhl Libre", serif;
+  color: #fff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+  height: 70px;
+}
+nav div a {
+  text-decoration: none;
+  color: #a9a19e;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Fira Sans", sans-serif;
+}
+/* look here later */
+nav div a:active {
+  color: #000;
+}
+nav div:nth-of-type(1) {
+  margin-inline: 230px 0;
+}
+nav div:nth-of-type(4) {
+  margin-inline: 0 230px;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+.main-card {
+  background-color: #a9a19e;
+  width: 1000px;
+  height: 545px;
 }
