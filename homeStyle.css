@@ -284,3 +284,129 @@ h6 {
   color: #fff;
   margin-bottom: 40px;
 }
+.instructions {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(2, 50%);
+  top: 100%;
+  width: 1000px;
+  height: 660px;
+}
+.icard {
+  grid-column-start: 1;
+}
+
+.ic1 {
+  background-color: #c7ddea;
+  grid-column: 1;
+  grid-row-start: 1;
+}
+.icard {
+  display: grid;
+  grid-template-columns: 50px 200px 50px;
+  grid-template-rows: repeat(3, 33.33%);
+}
+.howto {
+  grid-column: 2;
+  grid-row: 2;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-inline: 50px;
+}
+.num {
+  grid-row: 1;
+  grid-column: 1;
+  margin-inline: 20px 0;
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: "Frank Ruhl Libre", serif;
+  color: #a9a19e;
+}
+.ic5 .num {
+  color: #66615f;
+}
+.ic5 .howtotext {
+  white-space: nowrap;
+  margin-inline: 0 20px;
+}
+.howtotext {
+  grid-row: 2;
+  margin-top: 35px;
+  grid-column: 2;
+  font-family: "Fira Sans", sans-serif;
+}
+.ic3 .howtotext {
+  width: 120px;
+  margin-inline: 20px;
+}
+.ic6 .howtotext {
+  width: 120px;
+  margin-inline: 100px;
+}
+.howto:nth-of-type(2) {
+  white-space: nowrap;
+  margin-top: 40px;
+  margin-inline: 30px;
+}
+
+.ic2 {
+  background-color: #fff;
+  grid-column: 2;
+  grid-row-start: 1;
+}
+.ic3 {
+  background-color: transparent;
+  grid-column: 3;
+  grid-row-start: 1;
+}
+.ic4 {
+  background-color: #fff;
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row: 2;
+}
+.ic5 {
+  background-color: #f17949;
+  grid-column: 2;
+  grid-row-start: 2;
+}
+.ic6 {
+  background-color: #fff;
+  grid-column: 3;
+  grid-row-start: 2;
+}
+.up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1000px;
+  background-color: #8a817e;
+  height: 70px;
+}
+.up-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.up-btn .material-icons {
+  max-width: 40px;
+  font-size: 45px;
+  line-height: 0.5;
+}
+.up p {
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: -15px;
+}
+footer {
+  width: 1000px;
+  position: relative;
+  top: 100%;
+}
+.end-container {
+  width: 100%;
+  height: 300px;
+  background-color: #66615f;
+}
