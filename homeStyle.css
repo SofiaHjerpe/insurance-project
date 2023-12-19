@@ -198,6 +198,7 @@ nav {
   display: flex;
   gap: 20px;
   margin-top: -140px;
+  background-color: transparent;
 
   justify-content: center;
 }
@@ -266,6 +267,7 @@ h6 {
   margin-top: -140px;
   height: 690px;
   z-index: -1;
+  padding-bottom: 0;
   top: 100%;
   background-color: #fab131;
 }
@@ -304,6 +306,8 @@ h6 {
   display: grid;
   grid-template-columns: 50px 200px 50px;
   grid-template-rows: repeat(3, 33.33%);
+  grid-row-gap: 0;
+  grid-column-gap: 0;
 }
 .howto {
   grid-column: 2;
@@ -415,21 +419,19 @@ footer {
   body {
     align-items: flex-start;
     overflow-x: hidden;
-    max-width: 100%;
   }
   .header-wrapper {
     flex-direction: column;
-    width: 100%;
+    max-width: 450px;
   }
   .card-one {
-    max-width: 768px;
+    max-width: 450px;
     height: 655px;
     background-color: #c7ddea;
     padding: 16px;
     padding-bottom: 0;
   }
   .heading-header {
-    padding: 0;
     gap: 20px;
     padding-bottom: 20px;
   }
@@ -474,5 +476,113 @@ footer {
   .main-card {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 900px;
+    overflow-y: visible;
+  }
+  .add-start {
+    top: 100%;
+    height: 140px;
+    gap: 10px;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    margin-inline: 0;
+    margin-top: -255px;
+    padding: 30px;
+    justify-content: flex-start;
+    padding-inline: 0 50px;
+  }
+  .add-start button {
+    display: none;
+  }
+  .add-text {
+    padding: 0;
+    margin-inline: 0;
+    width: 100%;
+    align-self: center;
+  }
+  .add-text p {
+    padding: 16px;
+    height: 100px;
+    line-height: 1.5;
+    margin-inline: 0;
+  }
+  .cards {
+    width: 100%;
+    top: 0;
+    flex-direction: column;
+    gap: 55px;
+    background-color: #a9a19e;
+    margin-top: -355px;
+    padding-bottom: 55px;
+    justify-content: center;
+  }
+  .card {
+    align-self: center;
+  }
+  .main-yellow-card {
+    width: 100%;
+    margin-top: 0;
+    height: 500px;
+    padding-bottom: 55px;
+  }
+  .main-yellow-card article {
+    width: 70%;
+  }
+  .instructions {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(6, 16%);
+    top: 100%;
+    width: 100%;
+    height: 1000px;
+  }
+  .howto {
+    margin-inline: 0;
+  }
+  .howto {
+    grid-column: 2;
+    grid-row: 2;
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 1000;
+    font-size: 40px;
+    margin-inline: 60px;
+  }
+
+  .icard {
+    grid-template-columns: 50px 200px 50px;
+    grid-template-rows: 20px 100px 20px;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+  }
+  .howtotext {
+    margin-top: 20px;
+  }
+  .ic2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .ic3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .ic4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .ic5 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .ic6 {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  .up {
+    display: none;
+  }
+  .end-container {
+    width: 400px;
+    margin-top: -45px;
   }
 }
