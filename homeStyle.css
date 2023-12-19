@@ -2,14 +2,9 @@
   padding: 0;
   margin: 0;
 }
-/* #F17949
-#FAB131
-#C7DDEA
-#A9A19E */
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #e4e4e4;
 }
@@ -21,7 +16,6 @@ header {
   display: flex;
   width: 1000px;
 }
-
 .card-one {
   width: 500px;
   height: 545px;
@@ -39,7 +33,7 @@ header {
 }
 .heading-header h1 {
   font-family: "Frank Ruhl Libre", serif;
-  font-weight: bold;
+  font-weight: 1000;
   font-size: 40px;
 }
 .heading-header p {
@@ -63,11 +57,11 @@ header {
   font-weight: bold;
   white-space: nowrap;
   margin-bottom: 100px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-inline: 40px 0;
 }
 .family-images {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .family-images img {
@@ -118,21 +112,25 @@ nav {
   height: 70px;
   width: 1000px;
 }
-nav div a {
+
+.nav-item a {
   text-decoration: none;
   color: #a9a19e;
   font-weight: 500;
   font-size: 14px;
   font-family: "Fira Sans", sans-serif;
 }
-/* look here later */
-nav div a:active {
+
+.nav-item a:active {
   color: #000;
 }
-nav div:nth-of-type(1) {
+.nav-item:nth-of-type(1) {
   margin-inline: 230px 0;
 }
-nav div:nth-of-type(4) {
+.nav-item:nth-of-type(1) a {
+  color: #000;
+}
+.nav-item:nth-of-type(4) {
   margin-inline: 0 230px;
 }
 .main-content {
@@ -165,7 +163,7 @@ nav div:nth-of-type(4) {
 }
 .add-start h1 {
   font-family: "Frank Ruhl Libre", serif;
-  font-weight: bold;
+  font-weight: 1000;
   font-size: 40px;
   color: #fff;
 }
@@ -178,6 +176,7 @@ nav div:nth-of-type(4) {
   border-color: transparent;
   border-radius: 20px;
   font-size: 14px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   font-family: "Fira Sans", sans-serif;
   font-weight: bold;
   white-space: nowrap;
@@ -279,7 +278,7 @@ h6 {
 }
 .about {
   font-family: "Frank Ruhl Libre", serif;
-  font-weight: bold;
+  font-weight: 1000;
   font-size: 40px;
   color: #fff;
   margin-bottom: 40px;
@@ -310,7 +309,7 @@ h6 {
   grid-column: 2;
   grid-row: 2;
   font-family: "Frank Ruhl Libre", serif;
-  font-weight: bold;
+  font-weight: 1000;
   font-size: 40px;
   margin-inline: 50px;
 }
@@ -409,4 +408,71 @@ footer {
   width: 100%;
   height: 300px;
   background-color: #66615f;
+}
+
+/*mobile*/
+@media screen and (max-width: 768px) {
+  body {
+    align-items: flex-start;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  .header-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card-one {
+    max-width: 768px;
+    height: 655px;
+    background-color: #c7ddea;
+    padding: 16px;
+    padding-bottom: 0;
+  }
+  .heading-header {
+    padding: 0;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .heading-header h1 {
+    font-weight: 1000;
+  }
+  .family-images {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .family-images button {
+    margin-bottom: 0;
+    margin-inline: 0;
+    font-size: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 150px;
+  }
+  .family-images img {
+    width: 350px;
+  }
+  .card-two-top,
+  .card-two-bottom {
+    display: flex;
+    max-width: 400px;
+  }
+  .content p {
+    opacity: 0.5;
+    margin-inline: 20px;
+    font-weight: bold;
+  }
+  .content h2 {
+    font-size: 32px;
+    padding-bottom: 30px;
+  }
+  nav {
+    display: none;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .main-card {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
