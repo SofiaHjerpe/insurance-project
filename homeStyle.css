@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
   background-color: #e4e4e4;
 }
 header {
@@ -167,8 +168,10 @@ nav {
   font-size: 40px;
   color: #fff;
 }
-
-.add-start button {
+.family-images {
+  padding: 26px;
+}
+.family-images button {
   height: 48px;
   width: 160px;
   background-color: #fff;
@@ -181,6 +184,7 @@ nav {
   font-weight: bold;
   white-space: nowrap;
   margin-bottom: 100px;
+  align-self: flex-start;
 }
 .add-text {
   width: 280px;
@@ -323,6 +327,7 @@ h6 {
   margin-inline: 20px 0;
   margin-top: 20px;
   font-size: 30px;
+  padding: 0;
   font-family: "Frank Ruhl Libre", serif;
   color: #a9a19e;
 }
@@ -417,18 +422,18 @@ footer {
 /*mobile*/
 @media screen and (max-width: 768px) {
   body {
-    align-items: flex-start;
+    max-width: 450px;
     overflow-x: hidden;
   }
   .header-wrapper {
     flex-direction: column;
-    max-width: 450px;
+    width: 450px;
   }
   .card-one {
-    max-width: 450px;
+    width: 450px;
     height: 655px;
     background-color: #c7ddea;
-    padding: 16px;
+    padding: 0;
     padding-bottom: 0;
   }
   .heading-header {
@@ -442,21 +447,23 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    padding: 30px;
   }
   .family-images button {
     margin-bottom: 0;
-    margin-inline: 0;
+    margin-inline: 20px 0;
     font-size: 12px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     width: 150px;
   }
   .family-images img {
-    width: 350px;
+    width: 310px;
+    align-self: center;
   }
   .card-two-top,
   .card-two-bottom {
     display: flex;
-    max-width: 400px;
+    max-width: 450px;
   }
   .content p {
     opacity: 0.5;
@@ -471,9 +478,10 @@ footer {
     display: none;
   }
   .main-content {
-    width: 100%;
+    width: 450px;
   }
   .main-card {
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -486,7 +494,7 @@ footer {
     gap: 10px;
     overflow-x: hidden;
     flex-wrap: wrap;
-    margin-inline: 0;
+    margin-inline: 15px;
     margin-top: -255px;
     padding: 30px;
     justify-content: flex-start;
@@ -498,7 +506,7 @@ footer {
   .add-text {
     padding: 0;
     margin-inline: 0;
-    width: 100%;
+    width: 70%;
     align-self: center;
   }
   .add-text p {
@@ -555,6 +563,11 @@ footer {
     grid-row-gap: 20px;
     grid-column-gap: 30px;
   }
+  .num {
+    padding: 30px;
+    padding-top: 0;
+    margin-inline: 0;
+  }
   .howtotext {
     margin-top: 20px;
   }
@@ -582,7 +595,7 @@ footer {
     display: none;
   }
   .end-container {
-    width: 400px;
+    width: 690px;
     margin-top: -45px;
   }
 }
