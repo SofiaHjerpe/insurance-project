@@ -11,7 +11,15 @@
   gap: 100px;
   align-items: center;
 }
-.header-card article .hello {
+.hello-article {
+  display: flex;
+  gap: 10px;
+}
+.hello:nth-of-type(2) {
+  margin-inline: 0 10px;
+}
+
+.hello {
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 1000;
   font-size: 60px;
@@ -37,17 +45,23 @@ nav {
   font-size: 14px;
   font-family: "Fira Sans", sans-serif;
 }
+.nav-container {
+  display: flex;
+}
 
 .nav-item a:active {
   color: #000;
 }
-.nav-item:nth-of-type(1) {
+.nav-container {
+  gap: 200px;
+}
+.nav-container:nth-of-type(1) {
   margin-inline: 300px 0;
 }
-.nav-item:nth-of-type(4) a {
+.nav-container:nth-of-type(2) .nav-item:nth-of-type(2) a {
   color: #000;
 }
-.nav-item:nth-of-type(4) {
+.nav-container:nth-of-type(2) {
   margin-inline: 0 370px;
 }
 .contact {
@@ -137,7 +151,7 @@ button {
   gap: 50px;
 }
 .visit {
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
   width: 450px;
@@ -145,10 +159,11 @@ button {
   height: 250px;
   background-color: #fab131;
 }
-.visit .w {
-  margin-inline: 50px 0;
-}
+
 .visit p {
+  display: flex;
+  opacity: 0.8;
+  padding-bottom: 10px;
   align-self: flex-start;
   color: #fff;
   font-family: "Fira Sans", sans-serif;
@@ -157,6 +172,7 @@ article .material-icons {
   font-size: 150px;
   color: #fa5931;
   margin-top: 200px;
+  margin-inline: 0;
 }
 .end-container {
   width: 100%;
@@ -164,22 +180,143 @@ article .material-icons {
   background-color: #66615f;
 }
 @media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
   .header-card {
     max-width: 768px;
     height: 310px;
-    padding-inline: 20px 30px;
+    padding-inline: 50px 0;
     gap: 0;
   }
-  .header-card article .hello {
-    font-size: 50px;
-    width: 200px;
+  .hello-article {
+    flex-direction: column;
+    gap: 0;
+  }
+  .hello:nth-of-type(2) {
     margin-inline: 0;
-    margin-bottom: 60px;
+  }
+  .hello {
+    font-size: 50px;
+    position: relative;
+    white-space: nowrap;
+    margin-inline: 0;
     align-self: center;
   }
   .header-images img {
     width: 200px;
     align-self: center;
+    margin-inline: 0 100px;
     margin-top: 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+  }
+  .nav-container {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    align-self: center;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 4px 8px 24px;
+  }
+  .nav-container:nth-of-type(2) .nav-item:nth-of-type(2) {
+    background-color: #e4e4e4;
+  }
+  .nav-item a:active {
+    color: #000;
+  }
+  .nav-container:nth-of-type(1) {
+    margin-inline: 0;
+  }
+
+  .nav-container:nth-of-type(2) {
+    margin-inline: 0;
+  }
+  .contact {
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .w {
+    font-size: 50px;
+    color: #fff;
+  }
+  .contact div .w:nth-of-type(1) {
+    white-space: nowrap;
+    margin-inline: 120px 0;
+  }
+  .contact div .w:nth-of-type(2) {
+    margin-inline: 120px 0;
+  }
+
+  .contact-form {
+    display: flex;
+    align-items: center;
+    align-self: center;
+
+    gap: 20px;
+  }
+  .contact-form div input {
+    width: 350px;
+    padding: 5px 17px;
+  }
+  .form {
+    align-self: center;
+    justify-content: center;
+  }
+  .form-control {
+    width: 360px;
+  }
+  .contact-form button {
+    align-self: flex-end;
+    margin-inline: 0 60px;
+    width: 170px;
+  }
+  .map {
+    flex-direction: column;
+    padding: 0;
+    height: 600px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .visit {
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-inline: 20px;
+    margin-inline: 20px;
+    width: 340px;
+    height: 150px;
+    display: block;
+    margin-top: -400px;
+  }
+  article .material-icons {
+    margin-top: 50px;
+    font-size: 100px;
+    margin-inline: 150px;
+  }
+  .end-container {
+    display: none;
   }
 }
