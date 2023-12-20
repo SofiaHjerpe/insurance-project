@@ -19,7 +19,7 @@ header {
 }
 .card-one {
   width: 500px;
-  height: 545px;
+  height: 570px;
   background-color: #c7ddea;
   padding: 16px;
   padding-bottom: 0;
@@ -48,18 +48,18 @@ header {
 }
 .family-images button {
   height: 48px;
-  width: 200px;
+ width: 220px;
   background-color: #fff;
   text-transform: uppercase;
   border-color: transparent;
   border-radius: 20px;
   font-size: 14px;
+  padding-inline: 20px;
   font-family: "Fira Sans", sans-serif;
   font-weight: bold;
   white-space: nowrap;
   margin-bottom: 100px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-inline: 40px 0;
 }
 .family-images {
   display: flex;
@@ -81,14 +81,14 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #f17949;
-  height: 280px;
+  height: 290px;
 }
 .card-two-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fab131;
-  height: 280px;
+  height: 295px;
 }
 .content {
   display: flex;
@@ -171,7 +171,7 @@ nav {
 .family-images {
   padding: 26px;
 }
-.family-images button {
+.add-start button {
   height: 48px;
   width: 160px;
   background-color: #fff;
@@ -421,6 +421,10 @@ footer {
 
 /*mobile*/
 @media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     max-width: 450px;
     overflow-x: hidden;
@@ -437,12 +441,20 @@ footer {
     padding-bottom: 0;
   }
   .heading-header {
+    padding-inline: 35px;
+    align-items: center;
     gap: 20px;
     padding-bottom: 20px;
+    width: 390px;
   }
   .heading-header h1 {
     font-weight: 1000;
   }
+  .heading-header p {
+    padding: 0;
+    align-self: center;
+  }
+
   .family-images {
     flex-direction: column;
     align-items: flex-start;
@@ -453,7 +465,6 @@ footer {
     margin-bottom: 0;
     margin-inline: 20px 0;
     font-size: 12px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     width: 150px;
   }
   .family-images img {
@@ -494,8 +505,8 @@ footer {
     gap: 10px;
     overflow-x: hidden;
     flex-wrap: wrap;
-    margin-inline: 15px;
     margin-top: -255px;
+    margin-inline: 80px 0;
     padding: 30px;
     justify-content: flex-start;
     padding-inline: 0 50px;
@@ -527,7 +538,9 @@ footer {
   }
   .card {
     align-self: center;
+    overflow: visible;
   }
+
   .main-yellow-card {
     width: 100%;
     margin-top: 0;
@@ -536,6 +549,9 @@ footer {
   }
   .main-yellow-card article {
     width: 70%;
+  }
+  .card .c1 {
+    overflow: visible;
   }
   .instructions {
     display: grid;
@@ -566,7 +582,7 @@ footer {
   .num {
     padding: 30px;
     padding-top: 0;
-    margin-inline: 0;
+    margin-inline: 5px 0;
   }
   .howtotext {
     margin-top: 20px;
@@ -595,7 +611,7 @@ footer {
     display: none;
   }
   .end-container {
-    width: 690px;
+    width: 710px;
     margin-top: -45px;
   }
 }
