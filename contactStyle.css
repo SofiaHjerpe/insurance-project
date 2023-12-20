@@ -53,8 +53,9 @@ nav {
 .contact {
   display: flex;
   background-color: #a9a19e;
-  width: 100%;
+  max-width: 1400px;
   height: 500px;
+  width: 80%;
   padding: 150px;
   gap: 100px;
 }
@@ -126,12 +127,18 @@ button {
 .map {
   display: flex;
   height: 400px;
+  width: 1380px;
+  background-image: url("img/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
   padding: 50px;
+  gap: 50px;
 }
 .visit {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: center;
   width: 450px;
   padding: 50px;
@@ -150,4 +157,9 @@ article .material-icons {
   font-size: 150px;
   color: #fa5931;
   margin-top: 200px;
+}
+.end-container {
+  width: 100%;
+  height: 350px;
+  background-color: #66615f;
 }
